@@ -30,5 +30,6 @@ jobs:
         working-directory: ./packages/docs
         run: npx storybook-to-ghpages --ci --existing-output-dir=storybook-static --git-remote=https://x-access-token:${{ secrets.MY_PAT }}@github.com/kjunior-dev/05-design-system.git
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+
 
