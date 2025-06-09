@@ -5,8 +5,8 @@ export default {
   title: 'Data display/Avatar',
   component: Avatar,
   args: {
-    src: 'https://github.com/diego3g.png',
-    alt: 'Diego Fernandes',
+    src: 'https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740',
+    alt: 'Avatar logo',
   },
   argTypes: {
     src: {
