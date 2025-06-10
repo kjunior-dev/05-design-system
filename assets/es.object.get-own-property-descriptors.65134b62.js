@@ -1,0 +1,2 @@
+var v=Object.defineProperty;var c=(t,r)=>v(t,"name",{value:r,configurable:!0});import{o as y,r as d,s as O,t as w,v as P,x as g}from"./iframe.8475d232.js";var u=y,D=d,f=O,x=w,b=g,j=P;u({target:"Object",stat:!0,sham:!D},{getOwnPropertyDescriptors:c(function(r){for(var o=x(r),i=b.f,a=f(o),s={},n=0,p,e;a.length>n;)e=i(o,p=a[n++]),e!==void 0&&j(s,p,e);return s},"getOwnPropertyDescriptors")});
+//# sourceMappingURL=es.object.get-own-property-descriptors.65134b62.js.map
