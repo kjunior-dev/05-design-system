@@ -1,4 +1,4 @@
-# @ignite-ui/tokens
+# @devtrust/tokens
 
 ## 2.0.0
 

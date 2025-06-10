@@ -1,4 +1,4 @@
-# @ignite-ui/react
+# @devtrust/react
 
 ## 3.0.0
 
