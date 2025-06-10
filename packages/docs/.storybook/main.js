@@ -22,5 +22,16 @@ module.exports = {
     }
 
     return config
-  }
+  },
+
+  babel: async (options) => ({
+    ...options,
+    presets: [
+      ...options.presets,
+      ['@babel/preset-env', {
+        useBuiltIns: 'usage',
+        corejs: 3
+      }]
+    ]
+  })
 }
