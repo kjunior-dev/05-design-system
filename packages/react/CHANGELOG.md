@@ -1,5 +1,11 @@
 # @ignite-ui/react
 
+## 3.0.0
+
+### Major Changes
+
+- Add all public
+
 ## 2.2.2
 
 ### Patch Changes
