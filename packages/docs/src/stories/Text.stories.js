@@ -1,13 +1,10 @@
-"use strict";
-exports.__esModule = true;
-exports.CustomTag = exports.Primary = void 0;
-var react_1 = require("@ignite-ui/react");
-exports["default"] = {
+import { Text } from '@devtrust/react';
+export default {
     title: 'Typography/Text',
-    component: react_1.Text,
+    component: Text,
     args: {
         size: 'md',
-        children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.'
+        children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro reprehenderit est veniam? Rem recusandae sint perspiciatis debitis corrupti. Deserunt neque exercitationem illo voluptatum laudantium culpa suscipit accusantium blanditiis voluptas numquam.',
     },
     argTypes: {
         size: {
@@ -27,15 +24,15 @@ exports["default"] = {
                 '9xl',
             ],
             control: {
-                type: 'inline-radio'
-            }
-        }
-    }
+                type: 'inline-radio',
+            },
+        },
+    },
 };
-exports.Primary = {};
-exports.CustomTag = {
+export const Primary = {};
+export const CustomTag = {
     args: {
         children: 'Strong text',
-        as: 'strong'
-    }
+        as: 'strong',
+    },
 };

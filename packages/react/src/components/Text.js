@@ -1,8 +1,5 @@
-"use strict";
-exports.__esModule = true;
-exports.Text = void 0;
-var styles_1 = require("../styles");
-exports.Text = (0, styles_1.styled)('p', {
+import { styled } from '../styles';
+export const Text = styled('p', {
     fontFamily: '$default',
     lineHeight: '$base',
     margin: 0,
@@ -21,11 +18,11 @@ exports.Text = (0, styles_1.styled)('p', {
             '6xl': { fontSize: '$6xl' },
             '7xl': { fontSize: '$7xl' },
             '8xl': { fontSize: '$8xl' },
-            '9xl': { fontSize: '$9xl' }
-        }
+            '9xl': { fontSize: '$9xl' },
+        },
     },
     defaultVariants: {
-        size: 'md'
-    }
+        size: 'md',
+    },
 });
-exports.Text.displayName = 'Text';
+Text.displayName = 'Text';

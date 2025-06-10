@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CheckboxProps } from '@ignite-ui/react';
+import { CheckboxProps } from '@devtrust/react';
 declare const _default: Meta<CheckboxProps>;
 export default _default;
 export declare const Primary: StoryObj<CheckboxProps>;

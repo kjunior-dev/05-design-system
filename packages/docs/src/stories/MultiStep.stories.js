@@ -1,27 +1,23 @@
-"use strict";
-exports.__esModule = true;
-exports.Full = exports.Primary = void 0;
-var react_1 = require("@ignite-ui/react");
-exports["default"] = {
+import { jsx as _jsx } from "react/jsx-runtime";
+import { Box, MultiStep } from '@devtrust/react';
+export default {
     title: 'Form/Multi Step',
-    component: react_1.MultiStep,
+    component: MultiStep,
     args: {
         size: 4,
-        currentStep: 1
+        currentStep: 1,
     },
     decorators: [
-        function (Story) {
-            return (<react_1.Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
-          {Story()}
-        </react_1.Box>);
+        (Story) => {
+            return (_jsx(Box, Object.assign({ as: "label", css: { display: 'flex', flexDirection: 'column', gap: '$2' } }, { children: Story() })));
         },
-    ]
+    ],
 };
-exports.Primary = {
-    args: {}
+export const Primary = {
+    args: {},
 };
-exports.Full = {
+export const Full = {
     args: {
-        currentStep: 4
-    }
+        currentStep: 4,
+    },
 };

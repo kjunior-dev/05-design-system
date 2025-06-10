@@ -1,8 +1,5 @@
-"use strict";
-exports.__esModule = true;
-exports.Input = exports.Prefix = exports.TextInputContainer = void 0;
-var styles_1 = require("../../styles");
-exports.TextInputContainer = (0, styles_1.styled)('div', {
+import { styled } from '../../styles';
+export const TextInputContainer = styled('div', {
     backgroundColor: '$gray900',
     borderRadius: '$sm',
     boxSizing: 'border-box',
@@ -12,31 +9,31 @@ exports.TextInputContainer = (0, styles_1.styled)('div', {
     variants: {
         size: {
             sm: {
-                padding: '$2 $3'
+                padding: '$2 $3',
             },
             md: {
-                padding: '$3 $4'
-            }
-        }
+                padding: '$3 $4',
+            },
+        },
     },
     '&:has(input:focus)': {
-        borderColor: '$ignite300'
+        borderColor: '$ignite300',
     },
     '&:has(input:disabled)': {
         opacity: 0.5,
-        cursor: 'not-allowed'
+        cursor: 'not-allowed',
     },
     defaultVariants: {
-        size: 'md'
-    }
+        size: 'md',
+    },
 });
-exports.Prefix = (0, styles_1.styled)('span', {
+export const Prefix = styled('span', {
     fontFamily: '$default',
     fontSize: '$sm',
     color: '$gray400',
-    fontWeight: 'regular'
+    fontWeight: 'regular',
 });
-exports.Input = (0, styles_1.styled)('input', {
+export const Input = styled('input', {
     fontFamily: '$default',
     fontSize: '$sm',
     color: '$white',
@@ -45,12 +42,12 @@ exports.Input = (0, styles_1.styled)('input', {
     border: 0,
     width: '100%',
     '&:focus': {
-        outline: 0
+        outline: 0,
     },
     '&:disabled': {
-        cursor: 'not-allowed'
+        cursor: 'not-allowed',
     },
     '&::placeholder': {
-        color: '$gray500'
-    }
+        color: '$gray500',
+    },
 });

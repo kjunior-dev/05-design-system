@@ -1,16 +1,7 @@
-"use strict";
-exports.__esModule = true;
-exports.Avatar = void 0;
-var phosphor_react_1 = require("phosphor-react");
-var styles_1 = require("./styles");
-function Avatar(props) {
-    return (<styles_1.AvatarContainer>
-      <styles_1.AvatarImage {...props}/>
-
-      <styles_1.AvatarFallback delayMs={600}>
-        <phosphor_react_1.User />
-      </styles_1.AvatarFallback>
-    </styles_1.AvatarContainer>);
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { User } from 'phosphor-react';
+import { AvatarContainer, AvatarImage, AvatarFallback } from './styles';
+export function Avatar(props) {
+    return (_jsxs(AvatarContainer, { children: [_jsx(AvatarImage, Object.assign({}, props)), _jsx(AvatarFallback, Object.assign({ delayMs: 600 }, { children: _jsx(User, {}) }))] }));
 }
-exports.Avatar = Avatar;
 Avatar.displayName = 'Avatar';

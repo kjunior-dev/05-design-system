@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ButtonProps } from '@ignite-ui/react';
+import { ButtonProps } from '@devtrust/react';
 declare const _default: Meta<ButtonProps>;
 export default _default;
 export declare const Primary: StoryObj<ButtonProps>;

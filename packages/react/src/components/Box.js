@@ -1,11 +1,8 @@
-"use strict";
-exports.__esModule = true;
-exports.Box = void 0;
-var styles_1 = require("../styles");
-exports.Box = (0, styles_1.styled)('div', {
+import { styled } from '../styles';
+export const Box = styled('div', {
     padding: '$6',
     borderRadius: '$md',
     backgroundColor: '$gray800',
-    border: '1px solid $gray600'
+    border: '1px solid $gray600',
 });
-exports.Box.displayName = 'Box';
+Box.displayName = 'Box';

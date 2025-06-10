@@ -1,19 +1,17 @@
-"use strict";
-exports.__esModule = true;
-exports.Primary = void 0;
-var react_1 = require("@ignite-ui/react");
-exports["default"] = {
+import { jsx as _jsx } from "react/jsx-runtime";
+import { Box, Text } from '@devtrust/react';
+export default {
     title: 'Surfaces/Box',
-    component: react_1.Box,
+    component: Box,
     args: {
-        children: <react_1.Text>Testando o elemento Box</react_1.Text>
+        children: _jsx(Text, { children: "Testando o elemento Box" }),
     },
     argTypes: {
         children: {
             control: {
-                type: null
-            }
-        }
-    }
+                type: null,
+            },
+        },
+    },
 };
-exports.Primary = {};
+export const Primary = {};

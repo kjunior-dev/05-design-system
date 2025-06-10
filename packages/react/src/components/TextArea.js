@@ -1,8 +1,5 @@
-"use strict";
-exports.__esModule = true;
-exports.TextArea = void 0;
-var styles_1 = require("../styles");
-exports.TextArea = (0, styles_1.styled)('textarea', {
+import { styled } from '../styles';
+export const TextArea = styled('textarea', {
     backgroundColor: '$gray900',
     padding: '$3 $4',
     borderRadius: '$sm',
@@ -16,14 +13,14 @@ exports.TextArea = (0, styles_1.styled)('textarea', {
     minHeight: 80,
     '&:focus': {
         outline: 0,
-        borderColor: '$ignite300'
+        borderColor: '$ignite300',
     },
     '&:disabled': {
         opacity: 0.5,
-        cursor: 'not-allowed'
+        cursor: 'not-allowed',
     },
     '&:placeholder': {
-        color: '$gray400'
-    }
+        color: '$gray400',
+    },
 });
-exports.TextArea.displayName = 'TextArea';
+TextArea.displayName = 'TextArea';

@@ -1,9 +1,6 @@
-"use strict";
-exports.__esModule = true;
-exports.CheckboxIndicator = exports.CheckboxContainer = void 0;
-var Checkbox = require("@radix-ui/react-checkbox");
-var styles_1 = require("../../styles");
-exports.CheckboxContainer = (0, styles_1.styled)(Checkbox.Root, {
+import * as Checkbox from '@radix-ui/react-checkbox';
+import { styled, keyframes } from '../../styles';
+export const CheckboxContainer = styled(Checkbox.Root, {
     all: 'unset',
     width: '$6',
     height: '$6',
@@ -18,36 +15,36 @@ exports.CheckboxContainer = (0, styles_1.styled)(Checkbox.Root, {
     alignItems: 'center',
     border: '2px solid $gray900',
     '&[data-state="checked"]': {
-        backgroundColor: '$ignite300'
+        backgroundColor: '$ignite300',
     },
     '&:focus, &[data-state="checked"]': {
-        border: '2px solid $ignite300'
-    }
+        border: '2px solid $ignite300',
+    },
 });
-var slideIn = (0, styles_1.keyframes)({
+const slideIn = keyframes({
     from: {
-        transform: 'translateY(-100%)'
+        transform: 'translateY(-100%)',
     },
     to: {
-        transform: 'translateY(0)'
-    }
+        transform: 'translateY(0)',
+    },
 });
-var slideOut = (0, styles_1.keyframes)({
+const slideOut = keyframes({
     from: {
-        transform: 'translateY(0)'
+        transform: 'translateY(0)',
     },
     to: {
-        transform: 'translateY(-100%)'
-    }
+        transform: 'translateY(-100%)',
+    },
 });
-exports.CheckboxIndicator = (0, styles_1.styled)(Checkbox.Indicator, {
+export const CheckboxIndicator = styled(Checkbox.Indicator, {
     color: '$white',
     width: '$4',
     height: '$4',
     '&[data-state="checked"]': {
-        animation: "".concat(slideIn, " 200ms ease-out")
+        animation: `${slideIn} 200ms ease-out`,
     },
     '&[data-state="unchecked"]': {
-        animation: "".concat(slideOut, " 200ms ease-out")
-    }
+        animation: `${slideOut} 200ms ease-out`,
+    },
 });

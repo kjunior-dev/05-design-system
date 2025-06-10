@@ -1,4 +1,3 @@
-"use strict";
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -10,15 +9,11 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-exports.__esModule = true;
-exports.TextInput = void 0;
-var react_1 = require("react");
-var styles_1 = require("./styles");
-exports.TextInput = (0, react_1.forwardRef)(function (_a, ref) {
-    var prefix = _a.prefix, size = _a.size, props = __rest(_a, ["prefix", "size"]);
-    return (<styles_1.TextInputContainer size={size}>
-        {!!prefix && <styles_1.Prefix>{prefix}</styles_1.Prefix>}
-        <styles_1.Input ref={ref} {...props}/>
-      </styles_1.TextInputContainer>);
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { forwardRef } from 'react';
+import { Input, Prefix, TextInputContainer } from './styles';
+export const TextInput = forwardRef((_a, ref) => {
+    var { prefix, size } = _a, props = __rest(_a, ["prefix", "size"]);
+    return (_jsxs(TextInputContainer, Object.assign({ size: size }, { children: [!!prefix && _jsx(Prefix, { children: prefix }), _jsx(Input, Object.assign({ ref: ref }, props))] })));
 });
-exports.TextInput.displayName = 'TextInput';
+TextInput.displayName = 'TextInput';
