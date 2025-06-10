@@ -1,63 +1,68 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-import { Button } from '@ignite-ui/react';
-import { ArrowRight } from 'phosphor-react';
-export default {
+"use strict";
+exports.__esModule = true;
+exports.Disabled = exports.WithIcon = exports.Small = exports.Tertiary = exports.Secondary = exports.Primary = void 0;
+var react_1 = require("@ignite-ui/react");
+var phosphor_react_1 = require("phosphor-react");
+exports["default"] = {
     title: 'Form/Button',
-    component: Button,
+    component: react_1.Button,
     args: {
         children: 'Send',
         variant: 'primary',
         size: 'md',
-        disabled: false,
+        disabled: false
     },
     argTypes: {
         variant: {
             options: ['primary', 'secondary', 'tertiary'],
             control: {
-                type: 'inline-radio',
-            },
+                type: 'inline-radio'
+            }
         },
         size: {
             options: ['sm', 'md'],
             control: {
-                type: 'inline-radio',
-            },
+                type: 'inline-radio'
+            }
         },
         disabled: {
             control: {
-                type: 'boolean',
-            },
+                type: 'boolean'
+            }
         },
         onClick: {
-            action: 'click',
-        },
-    },
+            action: 'click'
+        }
+    }
 };
-export const Primary = {};
-export const Secondary = {
+exports.Primary = {};
+exports.Secondary = {
     args: {
         variant: 'secondary',
-        children: 'Create new',
-    },
+        children: 'Create new'
+    }
 };
-export const Tertiary = {
+exports.Tertiary = {
     args: {
         variant: 'tertiary',
-        children: 'Cancel',
-    },
+        children: 'Cancel'
+    }
 };
-export const Small = {
+exports.Small = {
     args: {
-        size: 'sm',
-    },
+        size: 'sm'
+    }
 };
-export const WithIcon = {
+exports.WithIcon = {
     args: {
-        children: (_jsxs(_Fragment, { children: ["Pr\u00F3ximo passo", _jsx(ArrowRight, { weight: "bold" })] })),
-    },
+        children: (<>
+        Próximo passo
+        <phosphor_react_1.ArrowRight weight="bold"/>
+      </>)
+    }
 };
-export const Disabled = {
+exports.Disabled = {
     args: {
-        disabled: true,
-    },
+        disabled: true
+    }
 };

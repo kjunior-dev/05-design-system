@@ -1,28 +1,33 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { Box, Text, TextInput } from '@ignite-ui/react';
-export default {
+"use strict";
+exports.__esModule = true;
+exports.WithPrefix = exports.Disabled = exports.Primary = void 0;
+var react_1 = require("@ignite-ui/react");
+exports["default"] = {
     title: 'Form/Text Input',
-    component: TextInput,
+    component: react_1.TextInput,
     args: {},
     decorators: [
-        (Story) => {
-            return (_jsxs(Box, Object.assign({ as: "label", css: { display: 'flex', flexDirection: 'column', gap: '$2' } }, { children: [_jsx(Text, Object.assign({ size: "sm" }, { children: "Email address" })), Story()] })));
+        function (Story) {
+            return (<react_1.Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
+          <react_1.Text size="sm">Email address</react_1.Text>
+          {Story()}
+        </react_1.Box>);
         },
-    ],
+    ]
 };
-export const Primary = {
+exports.Primary = {
     args: {
-        placeholder: 'Type your name',
-    },
+        placeholder: 'Type your name'
+    }
 };
-export const Disabled = {
+exports.Disabled = {
     args: {
-        disabled: true,
-    },
+        disabled: true
+    }
 };
-export const WithPrefix = {
+exports.WithPrefix = {
     args: {
         prefix: 'cal.com/',
-        placeholder: 'your-username',
-    },
+        placeholder: 'your-username'
+    }
 };
